@@ -10,7 +10,7 @@
 # A prime number is a whole number greater than 1 that has no divisors
 # other than 1 and itself (e.g., 2, 3, 5, 7, 11, 13 ...).
 #
-# -----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 # EXPECTED INPUT / OUTPUT EXAMPLES
 # -----------------------------------------------------------------------------
 #
@@ -22,7 +22,27 @@
 #
 #   Enter a number: 1
 #   1 is NOT a prime number.
-#
+# def is_prime(n):
+      """Check if a number is prime"""
+          if n<=1:
+            return False
+          if n == 2:
+              return True 
+          if n % 2 == 0:
+              return False 
+          for i in range(3,  int(n**0.5) + 1, 2):
+              if n % i == 0:
+                  return False 
+          return True
+
+
+num = int(input("Enter a number:"))
+
+if is_prime(num):
+    print(f"{8} is a prime number.")
+else:
+    print(f"{8} is NOT a prime number.")
+            
 # -----------------------------------------------------------------------------
 # REQUIREMENTS
 # -----------------------------------------------------------------------------
