@@ -75,5 +75,12 @@ num = int(input(f"Enter number {i+1}: "))
 numbers.append(num)
 
 print("\nResults:")
-print(f"Sum: {calculate
+print(f"Sum: {calculate_sum(numbers)}")
+print(f"Average: {calculate_average(numbers)}")
+print(f"Maximum: {find_max(numbers)}")
+print(f"Minimum: {find_min(numbers)}")
+
+
+if _name__ == "_main_":
+main() 
 
